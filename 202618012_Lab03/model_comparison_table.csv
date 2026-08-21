@@ -1,0 +1,5 @@
+Model + Pipeline,Train Accuracy,Test Accuracy,Precision (test),Recall (test),F1-score (test),Train-Test Gap
+DecisionTree + Pipeline B (MinMaxScaler),0.9962,0.8652,0.8151,0.8201,0.8176,0.131
+DecisionTree + Pipeline A (StandardScaler),0.9962,0.865,0.8152,0.8193,0.8173,0.1312
+LogisticRegression + Pipeline A (StandardScaler),0.8334,0.8301,0.8107,0.7033,0.7532,0.0033
+LogisticRegression + Pipeline B (MinMaxScaler),0.8285,0.825,0.8047,0.6933,0.7449,0.0035
