@@ -54,13 +54,7 @@ and deploying the final model as an interactive Streamlit web app.
 
 Compared several regression models with 5-fold cross-validation:
 
-| Model             | CV RMSE (log-price) | CV MAE | CV R² |
-|--------------------|:---:|:---:|:---:|
-| Linear Regression  | _fill in_ | _fill in_ | _fill in_ |
-| Ridge               | _fill in_ | _fill in_ | _fill in_ |
-| Lasso               | _fill in_ | _fill in_ | _fill in_ |
-| Random Forest       | _fill in_ | _fill in_ | _fill in_ |
-| XGBoost             | _fill in_ | _fill in_ | _fill in_ |
+
 
 **Selected model:** XGBoost — chosen despite not having the best untuned CV
 score, because tree-based models have far more tuning headroom than linear
@@ -73,13 +67,6 @@ Hyperparameters were tuned via `RandomizedSearchCV` (3-fold CV, 15
 iterations) over `n_estimators`, `max_depth`, `learning_rate`, `subsample`,
 `colsample_bytree`, and `min_child_weight`.
 
-**Final test-set performance (real price scale):**
-
-| Metric | Value |
-|---|---|
-| RMSE | $_fill in_ |
-| MAE  | $_fill in_ |
-| R²   | _fill in_ |
 
 Train vs. validation RMSE were compared via a learning curve to check for
 overfitting/underfitting; see `DS605_Lab4_Task2.ipynb` for the plot.
