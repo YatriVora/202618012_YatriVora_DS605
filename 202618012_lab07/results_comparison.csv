@@ -1,0 +1,6 @@
+Model,Features used,CV accuracy (train),Test accuracy,Compression vs raw
+"Similarity 1-NN, raw pixels",10304,,0.9875,1.0
+"Similarity 1-NN, PCA k=99 (NumPy)",99,,0.9875,104.1
+KNN (tuned),30,0.9688,0.9875,343.5
+Logistic Regression (tuned),50,0.9781,1.0,206.1
+SVM (tuned),50,0.9844,0.9875,206.1
